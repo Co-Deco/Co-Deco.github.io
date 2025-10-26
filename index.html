@@ -609,7 +609,7 @@
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
         font-family: Rubik, sans-serif;
-        background: red;
+        background: #C70000;
         color: white;
         border: none;
         border-radius: 0.5rem;
@@ -1521,7 +1521,7 @@
   function verifyCode() {
     if (enteredCode === passcode) {
       statusMessage = successMessage;
-      indicatorColor = "#00FF00";
+      indicatorColor = "#008000";
       console.log("Correct passcode entered, closing lock pop-up and showing openlock.png");
       setTimeout(() => {
         lockPopup.style.display = "none";
@@ -1541,7 +1541,7 @@
       }, 1000);
     } else {
       statusMessage = "Wrong";
-      indicatorColor = "#FF0000";
+      indicatorColor = "#C70000";
       enteredCode = "";
       setTimeout(() => {
         statusMessage = "";
